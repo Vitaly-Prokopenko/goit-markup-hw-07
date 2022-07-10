@@ -1,0 +1,121 @@
+/*---------------Studio------------------*/
+
+/*---------------Heder general-----------*/
+
+.heder {
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #ececec;
+}
+
+.heder-content {
+  display: flex;
+  align-items: center;
+}
+
+.heder-nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav-content {
+  display: block;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.list-page {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+
+.item-list-page:not(:last-child) {
+  margin-right: 50px;
+}
+
+.link-page {
+  text-decoration: none;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--nav-link-color);
+  transition: color 250ms var(--timing-function);
+}
+
+.link-page:hover,
+.link-page:focus {
+  color: var(--accent-color);
+}
+
+.current-page {
+  position: relative;
+  display: block;
+}
+
+.current-page::after {
+  content: "";
+  position: absolute;
+  bottom: -32px;
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color: var(--accent-color);
+  border-radius: 2px;
+}
+
+/*---------------Contacts----------------*/
+
+.list-contacts {
+  display: flex;
+  list-style: none;
+  margin-left: auto;
+}
+
+.list-contacts-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.contacts-item {
+  margin-right: 50px;
+}
+.contacts {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--contact-color);
+  text-decoration: none;
+}
+
+.contacts-icon {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.contacts {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  transition: color 250ms var(--timing-function);
+}
+
+.contacts:hover,
+.contacts:focus {
+  color: var(--accent-color);
+}
+
+.contacts:hover,
+.contacts:focus .contacts-icon {
+  fill: var(--accent-color);
+}
