@@ -8,8 +8,8 @@
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
-  color: var(--accent-btn-color);
-  background: var(--accent-color);
+  color: $accent-btn-color;
+  background: $accent-color;
   cursor: pointer;
   width: 200px;
   height: 50px;
@@ -31,8 +31,8 @@
   align-items: center;
   text-align: left;
   letter-spacing: 0.06em;
-  color: var(--accent-btn-color);
-  background: var(--accent-color);
+  color: $accent-btn-color;
+  background: $accent-color;
   cursor: pointer;
   width: 200px;
   height: 50px;

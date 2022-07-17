@@ -12,11 +12,11 @@
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--title-color);
+  color: $title-color;
   margin-bottom: 50px;
 }
 
-.list-work {
+.work-list {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
@@ -24,7 +24,7 @@
   flex-basis: calc((100% - 60px) / 3);
 }
 
-.work-list-item {
+.work-list__item {
   position: relative;
 }
 
@@ -40,7 +40,7 @@
   background-color: rgba(47, 48, 58, 0.8);
 }
 
-.label-text {
+.work-label__text {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;

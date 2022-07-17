@@ -1,17 +1,12 @@
 /*---------------Logo--------------------*/
 
-.link-logo {
+.logo {
   display: block;
   text-decoration: none;
   list-style: none;
 }
 
-.heder-logo {
-  margin-right: 93px;
-}
-
-.top-logo,
-.bottom-logo {
+.logo__text {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -20,8 +15,12 @@
   color: var(--top-logo-color);
 }
 
-.logo-color {
+.logo__accent {
   color: var(--accent-color);
+}
+
+.heder-logo {
+  margin-right: 93px;
 }
 
 .footer-logo {

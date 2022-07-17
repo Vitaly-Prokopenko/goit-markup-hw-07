@@ -13,13 +13,13 @@
   list-style: none;
 }
 
-.feature-list-item {
+.feature-list__item {
   display: flex;
   flex-direction: column;
   width: 270px;
 }
 
-.icon-conteiner {
+.feature-conteiner {
   background: #f5f4fa;
   border-radius: 4px;
   display: flex;
@@ -30,22 +30,22 @@
   margin-bottom: 30px;
 }
 
-.feature-title {
+.feature-list__title {
   text-align: left;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--title-color);
+  color: $title-color;
   margin-bottom: 10px;
 }
 
-.feature-description {
+.feature-list__description {
   text-align: left;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: var(--after-title-color);
+  color: $after-title-color;
 }

@@ -14,33 +14,27 @@
   border-bottom: 1px solid #ececec;
 }
 
-.heder-content {
-  display: flex;
-  align-items: center;
-}
-
-.heder-nav {
+.heder__content {
   display: flex;
   align-items: center;
 }
 
 .nav-content {
-  display: block;
+  display: flex;
   align-items: center;
-  justify-content: space-around;
 }
 
-.list-page {
+.nav {
   display: flex;
   flex-direction: row;
   list-style: none;
 }
 
-.item-list-page:not(:last-child) {
+.nav__item:not(:last-child) {
   margin-right: 50px;
 }
 
-.link-page {
+.nav__link {
   text-decoration: none;
   font-family: "Roboto";
   font-style: normal;
@@ -48,74 +42,63 @@
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: var(--nav-link-color);
-  transition: color 250ms var(--timing-function);
-}
-
-.link-page:hover,
-.link-page:focus {
-  color: var(--accent-color);
+  color: $nav-link-color;
+  transition: color 250ms $timing-function;
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
 }
 
 .current-page {
   position: relative;
   display: block;
-}
-
-.current-page::after {
-  content: "";
-  position: absolute;
-  bottom: -32px;
-  display: block;
-  width: 100%;
-  height: 4px;
-  background-color: var(--accent-color);
-  border-radius: 2px;
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -32px;
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: $accent-color;
+    border-radius: 2px;
+  }
 }
 
 /*---------------Contacts----------------*/
 
-.list-contacts {
+.contacts {
   display: flex;
   list-style: none;
   margin-left: auto;
 }
 
-.list-contacts-item:not(:last-child) {
+.contacts__item:not(:last-child) {
   margin-right: 50px;
 }
 
-.contacts-item {
-  margin-right: 50px;
-}
-.contacts {
+.contacts__link {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: var(--contact-color);
-  text-decoration: none;
+  color: $contact-color;
+  transition: color 250ms $timing-function;
+  &:hover,
+  &:focus {
+    color: $accent-color;
+    fill: $accent-color;
+    .contacts__icon {
+      fill: $accent-color;
+    }
+  }
 }
 
-.contacts-icon {
+.contacts__icon {
   display: inline-block;
   margin-right: 10px;
-}
-
-.contacts {
-  display: inline-flex;
-  align-items: center;
-  text-decoration: none;
-  transition: color 250ms var(--timing-function);
-}
-
-.contacts:hover,
-.contacts:focus {
-  color: var(--accent-color);
-}
-
-.contacts:hover,
-.contacts:focus .contacts-icon {
-  fill: var(--accent-color);
 }
